@@ -12,5 +12,8 @@
   "type": "commonjs",
   "dependencies": {
     "cypress": "^14.5.4"
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1"
   }
 }
