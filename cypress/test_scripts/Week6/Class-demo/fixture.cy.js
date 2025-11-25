@@ -7,7 +7,7 @@ describe('Fixture Test Suite', () => {
         cy.fixture('login').as('testData');
     });
     it('Fixture Test Case with beforeEach with Alias', function() {
-        //load data from fixture file
+        
         cy.get(':nth-child(1) > div > ._input__container_i8yxx_1 > ._input_i8yxx_1').type(this.testData.email);
         cy.get(':nth-child(2) > div > ._input__container_i8yxx_1 > ._input_i8yxx_1').type(this.testData.password);
         // cy.get('._button__container_i8yxx_1').click();
