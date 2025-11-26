@@ -12,7 +12,7 @@ describe('Mouse Hover', () => {
         cy.get('.mouse-hover-content a[href="#top"]').should('be.visible')
         cy.contains('Reload').should('be.visible')
 
-        // Method 1
+        
         // cy.get('.mouse-hover-content').trigger('mouseover')
         // cy.get('.mouse-hover-content a[href="#top"]').click()
     
