@@ -10,7 +10,7 @@ describe('Table Checkboxes - Test suite', () => {
       const location = 'Chicago';
       const department = 'Analysis';
   
-      // Find the row by visible name, then operate inside that row
+
       cy.contains('table tbody tr', name).within(() => {
         // 1) check the checkbox in this row
         cy.get('input[type="checkbox"]').check().should('be.checked');
@@ -21,7 +21,7 @@ describe('Table Checkboxes - Test suite', () => {
         cy.get('td').eq(4).should('have.text', location);
         cy.get('td').eq(5).should('have.text', department);
   
-        // 3) uncheck to restore state (optional)
+        // 3) uncheck to restore state
         cy.get('input[type="checkbox"]').uncheck().should('not.be.checked');
       });
     });
